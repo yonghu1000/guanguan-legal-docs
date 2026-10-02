@@ -90,153 +90,78 @@
             <b>点击复制</b>
           </span>
         </button>
-        <p>一封能让我们更快下手的邮件，最好包含这四项：<strong>机型</strong>、<strong>iOS 版本</strong>、<strong>复现步骤</strong>，以及一张截图或录屏（可选）。如果是「某个滤镜效果不对」，请顺手带上当时的滤镜名称。</p>
-        <div class="panel">
-          <p class="panel__tag">请随邮件发送的信息</p>
-          <ul>
-            <li>iPhone 型号（如 iPhone 15 Pro）与 iOS 版本（设置 → 通用 → 关于本机）</li>
-            <li>本 App 的版本号（设置页底部）</li>
-            <li>你做了什么、看到了什么、期望看到什么</li>
-            <li>是否为偶现：重启 App 后是否仍然出现</li>
-          </ul>
-        </div>
+        <p>来信请带上：<strong>机型</strong>、<strong>iOS 版本</strong>、<strong>复现步骤</strong>，以及一张截图或录屏（可选）。如果是「某个滤镜效果不对」，请顺手写上当时的滤镜名称。</p>
       </section>
 
-      <section class="sect" id="s2" data-title="先试这三件事">
-        <h2><b>02</b>先试这三件事</h2>
-        <p>在深挖之前，这三个动作解决了大约一半的「它怎么不动了」：</p>
-        <ul>
-          <li><strong>确认系统版本。</strong>本 App 需要 iOS 17.0 或更高版本（完整要求见第 05 节）。</li>
-          <li><strong>检查权限。</strong>首次拍摄时系统会依次询问相机、麦克风与照片权限；任何一项被拒，对应功能都会安静地失效。</li>
-          <li><strong>强制关闭后重开。</strong>从最近使用的 App 列表中划掉本 App，再打开一次。相机会话有时会卡在系统层面。</li>
-        </ul>
-      </section>
-
-      <section class="sect" id="s3" data-title="常见问题">
-        <h2><b>03</b>常见问题</h2>
+      <section class="sect" id="s2" data-title="常见问题">
+        <h2><b>02</b>常见问题</h2>
         <p>点击展开。</p>
 
         <div class="qa">
           <div class="qa__item">
             <button class="qa__q" type="button">取景框是全黑的，或者一直提示要相机权限<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>关关需要相机权限才能拍摄。请在本 App 的提示中点「前往设置」，或前往「系统设置 → 隐私与安全性 → 相机」，把关关打开。改完之后回到本 App，画面应当立刻出现。</p>
-              <p>若权限已是开启状态而画面仍然全黑，请先尝试第 02 节的「强制关闭后重开」；再不行，检查是否有其他 App 正在占用摄像头（例如正在进行视频通话）。</p>
+              <p>关关需要相机权限才能拍摄。请在 App 的提示中点「前往设置」，或前往「系统设置 → 隐私与安全性 → 相机」把关关打开。若权限已开而画面仍旧全黑，先强制关闭 App 再重开一次；也可能是其他 App 正占用摄像头（例如正在视频通话）。</p>
             </div></div>
           </div>
 
           <div class="qa__item">
             <button class="qa__q" type="button">为什么我在相册里看不到我拍的照片？<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>本 App 拍好的照片会同时存入系统相册。如果你在系统相册里看不到，请确认照片权限没有停在「受限访问」。</p>
-              <p>若是系统相册的照片在 App 内看不到：首次使用时如果选了「选择照片…（受限访问）」，你只会看到当时勾选的那部分。可以在相册页右上角的菜单里点「可访问的照片」追加。</p>
+              <p>拍好的照片会同时存入系统相册。若系统相册里看不到，请确认照片权限没有停在「受限访问」（设置 → 隐私与安全性 → 照片）。若是系统相册的照片在 App 内看不到，可在相册页右上角菜单点「可访问的照片」追加授权。</p>
             </div></div>
           </div>
 
           <div class="qa__item">
             <button class="qa__q" type="button">颗粒和暗角在哪里开？<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>都在取景界面底部的操作条上，不需要进设置。颗粒与暗角都是开关：点一下打开，再点一下关闭。</p>
-              <p>两者只作用在普通照片的成片上——取景预览与实况照片不含颗粒，这也是为了避免预览与实际观感不一致带来的判断误差。</p>
+              <p>都在取景界面底部的操作条上，不需要进设置。两者都是开关：点一下打开，再点一下关闭。它们只作用在普通照片的成片上——取景预览与实况照片不含颗粒。</p>
             </div></div>
           </div>
 
           <div class="qa__item">
             <button class="qa__q" type="button">实况照片没有声音<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>实况照片附带的声音来自麦克风。请前往「系统设置 → 隐私与安全性 → 麦克风」，把关关打开。关闭该权限时，实况照片仍可正常拍摄，但不含音轨。</p>
+              <p>实况照片的声音来自麦克风。请前往「系统设置 → 隐私与安全性 → 麦克风」把关关打开。关闭该权限时仍可正常拍摄，只是不含音轨。</p>
             </div></div>
           </div>
 
           <div class="qa__item">
             <button class="qa__q" type="button">为什么照片总是竖着的比例？<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>这是设计如此。取景容器固定为竖幅，几种画幅档位都是在其中取最大内接矩形，因此成片始终是竖构图，所见即所得。</p>
-              <p>如果你需要横构图的照片，可以先用原生系统相机拍摄，再在本 App 内处理。</p>
-            </div></div>
-          </div>
-
-          <div class="qa__item">
-            <button class="qa__q" type="button">拍完之后还能加相框或去掉相框吗？<span class="qa__sign" aria-hidden="true"></span></button>
-            <div class="qa__a"><div>
-              <p>可以。在大图查看器中用「相框」按钮随时添加或移除，重新导出的照片会同步更新。这是一项可逆的操作，原文件不会被覆盖。</p>
-              <p>注意：相框目前只支持常规照片，实况照片暂不支持添加或移除相框。</p>
+              <p>这是设计如此：取景容器固定为竖幅，几种画幅档位都是在其中取最大内接矩形，因此成片始终是竖构图，所见即所得。需要横构图可先用系统相机拍摄，再在本 App 内处理。</p>
             </div></div>
           </div>
 
           <div class="qa__item">
             <button class="qa__q" type="button">主屏幕小组件和锁屏相机控件怎么加？<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>主屏幕：长按空白处进入编辑模式，点右上角加号，搜索「关关」即可添加小组件。</p>
-              <p>锁屏控件：需要 iOS 18 及以上。长按锁屏 → 自定义 → 选择锁屏 → 移除或添加控件，在列表中找到关关的拍摄控件。它的作用是绕过解锁直接进入相机，受Face ID 与系统策略限制。</p>
+              <p>主屏幕：长按空白处进入编辑模式，点右上角加号，搜索「关关」即可添加。</p>
+              <p>锁屏控件需要 iOS 18 及以上：长按锁屏 → 自定义 → 选择锁屏 → 添加控件，在列表中找到关关的拍摄控件。它绕过解锁直接进入相机，受 Face ID 与系统策略限制。</p>
             </div></div>
           </div>
 
           <div class="qa__item">
             <button class="qa__q" type="button">照片会以什么格式保存？清晰度如何？<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>照片统一以 <strong>JPEG（.jpg）</strong> 保存，质量为 90%，不二次压缩，成片即设备原生分辨率。本 App 不提供 HEIC / PNG，也不提供 RAW 格式选项。</p>
-              <p>清晰度为设备原生水准；但胶片风格本身包含曲线与颗粒，观感上的「锐度」不同于原生相机。</p>
-            </div></div>
-          </div>
-
-          <div class="qa__item">
-            <button class="qa__q" type="button">长时间拍摄后会不会发烫或变慢？<span class="qa__sign" aria-hidden="true"></span></button>
-            <div class="qa__a"><div>
-              <p>胶片模拟是逐帧 GPU 计算，连续拍摄确实比原生相机更耗电。设备会按自身的温控保护策略降频。如果发现明显发热，让设备休息几分钟即可恢复。</p>
-            </div></div>
-          </div>
-
-          <div class="qa__item">
-            <button class="qa__q" type="button">App 崩了，或者某个滤镜看起来不对，怎么报告？<span class="qa__sign" aria-hidden="true"></span></button>
-            <div class="qa__a"><div>
-              <p>请按第 01 节的清单整理一封邮件发给我们——尤其是「复现步骤」和「当时的滤镜名称」，最能缩短定位时间。</p>
-              <p>如果 App 在闪退后可以重新打开，系统可能已经生成了崩溃记录；你可以顺便在邮件里告诉我们大致的时间点。</p>
+              <p>照片统一以 <strong>JPEG（.jpg）</strong> 保存，质量为 90%，不二次压缩，成片即设备原生分辨率。本 App 不提供 HEIC / PNG，也不提供 RAW 格式选项。胶片风格本身包含曲线与颗粒，观感上的「锐度」不同于原生相机。</p>
             </div></div>
           </div>
         </div>
       </section>
 
-      <section class="sect" id="s4" data-title="权限速查">
-        <h2><b>04</b>权限速查</h2>
-        <p>现象与处置的对照表。</p>
-        <div class="tblwrap">
-          <table class="tbl">
-            <thead>
-              <tr><th>现象</th><th>缺少的权限</th><th>去哪里开</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>取景框全黑、无法拍摄</td><td>相机</td><td>设置 → 隐私与安全性 → 相机</td></tr>
-              <tr><td>实况照片没有声音</td><td>麦克风</td><td>设置 → 隐私与安全性 → 麦克风</td></tr>
-              <tr><td>拍完的照片不出现在系统相册</td><td>照片（写入）</td><td>设置 → 隐私与安全性 → 照片</td></tr>
-              <tr><td>App 内看不到系统相册的照片</td><td>照片（读取）</td><td>相册页 → 右上角菜单 → 可访问的照片</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="sect" id="s5" data-title="机型与系统要求">
-        <h2><b>05</b>机型与系统要求</h2>
+      <section class="sect" id="s3" data-title="机型与系统要求">
+        <h2><b>03</b>机型与系统要求</h2>
         <ul>
           <li>iPhone，运行 <strong>iOS 17.0</strong> 或更高版本。</li>
           <li>锁屏相机控件需要 <strong>iOS 18</strong> 或更高版本。</li>
           <li>实况照片附带声音需要麦克风权限。</li>
-          <li>iPad 可以使用，但界面为竖构图设计，体验以 iPhone 为准。</li>
         </ul>
       </section>
 
-      <section class="sect" id="s6" data-title="隐私与数据">
-        <h2><b>06</b>隐私与数据</h2>
-        <div class="lead">
-          <p>关关不联网、无账号、无第三方统计或广告 SDK，也不会把你的照片上传到任何地方。</p>
-        </div>
-        <p>这意味着：我们无法帮你找回丢失的照片，但也意味着我们看不到它们。备份请依靠你自己的整机方案。完整的说明见<a class="lnk" href="./privacy.html">隐私政策</a>。</p>
-      </section>
-
-      <section class="sect" id="s7" data-title="功能建议">
-        <h2><b>07</b>功能建议</h2>
-        <p>关关很小，功能加得很慢，但我们认真读每一条建议。来信时请写清楚「你想解决的场景」，而不仅仅是「想要某个按钮」——前者往往能让我们做出更好的东西。</p>
-        <p>你也可以在 App Store 的评价里留下你的想法。评价对新用户很有帮助，谢谢你。</p>
+      <section class="sect" id="s4" data-title="隐私与数据">
+        <h2><b>04</b>隐私与数据</h2>
+        <p>关关不联网、无账号、无第三方统计或广告 SDK，也不会把你的照片上传到任何地方——这意味着我们帮不上你找回丢失的照片，但也意味着我们看不到它们。备份请依靠你自己的整机方案。完整说明见<a class="lnk" href="./privacy.html">隐私政策</a>。</p>
       </section>
 
     </main>
