@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>隐私政策 · 关关 Guanguan</title>
-<meta name="description" content="关关 Guanguan 的隐私政策：不收集任何数据、无账号、无云端、无第三方分析或广告 SDK。你的照片与被处理的影像全程只留在这台 iPhone 上。">
+<meta name="description" content="关关 Guanguan 隐私政策：不收集任何数据、无账号、无云端、无第三方分析或广告 SDK，照片全程只留在本机。">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)">
 <meta name="robots" content="index, follow">
@@ -52,12 +52,11 @@
   <section class="hero">
     <p class="eyebrow">GUANGUAN / 隐私政策</p>
     <h1>你的照片<br><em>从未离开这台设备。</em></h1>
-    <p class="hero__lede">这是一份可以读完的隐私政策。它没有例外条款，没有模糊措辞，也没有藏在句子中间的「但我们可能会」。</p>
+    <p class="hero__lede">没有例外条款，也没有藏在句子中间的「但我们可能会」。</p>
     <dl class="factbar">
-      <div><dt>版本</dt><dd>1.1</dd></div>
+      <div><dt>版本</dt><dd>1.2</dd></div>
       <div><dt>生效日期</dt><dd>2026 年 10 月 2 日</dd></div>
       <div><dt>App Store 隐私标签</dt><dd>无数据收集</dd></div>
-      <div><dt>适用版本</dt><dd>iOS 17.0 及以上</dd></div>
     </dl>
   </section>
 
@@ -80,33 +79,18 @@
 
     <main id="main">
 
-      <section class="sect" id="p1" data-title="一句话的结论">
-        <h2><b>01</b>一句话的结论</h2>
+      <section class="sect" id="p1" data-title="不收集任何数据">
+        <h2><b>01</b>不收集任何数据</h2>
         <div class="lead">
           <p>关关不会把你的照片、视频、声音、位置或任何个人信息发送到你的设备之外。</p>
         </div>
-        <p>你拍摄与被处理的影像，全程只留在这台 iPhone 上。我们想知道你是谁，但我们没有办法知道——这是设计使然，不是承诺使然。</p>
+        <p>你拍摄与被处理的影像，全程只留在这台 iPhone 上。App Store 的隐私标签显示为「无数据收集」——本 App 不含任何网络请求代码，没有账号，没有第三方分析、广告或崩溃上报 SDK，也不读取广告标识符（IDFA）。内置的胶片颗粒与色彩查找表只在本机 GPU 上参与画面换算，不读取、不记录、不外传任何内容。</p>
+        <p>少数由 iOS 系统自身提供的能力会产生本地记录，与本 App 无关：Spotlight 搜索会索引照片文件名、拍摄时间与一张缩略图（为的是你能在桌面下拉搜索里找到自己的照片）；崩溃与性能诊断由 Apple 的 MetricKit 采集；评分弹窗由系统决定是否弹出，我们无法触发也无法感知。</p>
       </section>
 
-      <section class="sect" id="p2" data-title="我们收集什么：什么都没有">
-        <h2><b>02</b>我们收集什么：什么都没有</h2>
-        <p>在 App Store 的隐私标签上，本 App 显示为「无数据收集」。这不是因为我们没有来得及写标签，而是因为它符合定义——Apple 定义的「收集」，指数据被传出设备且开发者可以访问。本 App 不满足其中任何一半。</p>
-        <div class="panel">
-          <p class="panel__tag">逐项说明</p>
-          <ul>
-            <li><strong>没有网络请求。</strong>全代码库不含任何 HTTP(S) 请求、后台上传、WebSocket 或 socket 通信。唯一的例外是由 iOS 系统自身发起的请求（见第 05 节），本 App 不参与。</li>
-            <li><strong>没有账号。</strong>没有注册、登录、邮箱绑定、手机号验证，因此不存在「账号数据」。</li>
-            <li><strong>没有第三方 SDK。</strong>没有行为分析、漏斗统计、崩溃上报 SDK、广告归因、AB 实验、推送营销。</li>
-            <li><strong>没有设备指纹。</strong>不读取广告标识符（IDFA），不使用 <code>vendorIdentifier</code> 做跟踪，不跨应用、跨网站追踪。</li>
-            <li><strong>没有分析面板。</strong>我们无从得知有多少人在用、用了多久、点了哪个滤镜。</li>
-          </ul>
-        </div>
-        <p>这条陈述是可验证的：本 App 没有申请联网能力的理由，也没有相应的代码。</p>
-      </section>
-
-      <section class="sect" id="p3" data-title="设备权限：只申请这四个">
-        <h2><b>03</b>设备权限：只申请这四个</h2>
-        <p>权限不是「收集」。它们是你把设备上的能力临时交给 App 的钥匙，而这把钥匙不会把任何东西带出门。下表列出本 App 会申请的全部权限，以及它们各自的确切用途。</p>
+      <section class="sect" id="p2" data-title="设备权限">
+        <h2><b>02</b>设备权限</h2>
+        <p>权限不是「收集」——它们是你把设备上的能力临时交给 App 的钥匙，而钥匙不会把任何东西带出门。本 App 会申请的全部权限如下：</p>
         <div class="tblwrap">
           <table class="tbl">
             <thead>
@@ -120,88 +104,30 @@
             </tbody>
           </table>
         </div>
-        <h3>我们从不申请的权限</h3>
-        <p>为免遗漏，以下是本 App <strong>不会</strong>申请的项目：定位与精确位置、通讯录、日历、提醒事项、健康与运动、Face ID 之外的生物特征、本地网络与蓝牙、App 跟踪授权（ATT）、后台定位。</p>
-        <p>所有权限都可以在「系统设置 → 隐私与安全性」中随时关闭。关闭相机权限后本 App 无法取景拍摄，届时会引导你前往设置；关闭麦克风权限后，实况照片仍可拍摄，但不包含声音；照片权限若处于「受限访问」，你只会看到当时勾选过的部分。</p>
+        <p>本 App <strong>不会</strong>申请：定位、通讯录、日历、提醒事项、健康与运动、Face ID 之外的生物特征、蓝牙与本地网络、App 跟踪授权（ATT）、后台定位。以上权限都能在「系统设置 → 隐私与安全性」中随时关闭。</p>
       </section>
 
-      <section class="sect" id="p4" data-title="数据存放在哪里">
-        <h2><b>04</b>数据存放在哪里</h2>
+      <section class="sect" id="p3" data-title="数据存放与删除">
+        <h2><b>03</b>数据存放与删除</h2>
+        <p>照片与实况照片保存在系统相册与本 App 的本地沙盒；滤镜选择、画幅、颗粒与暗角开关等偏好，以及拍摄时间、滤镜名称等照片元数据，保存在本机。这些内容其他 App 无法读取，而「删除你的数据」也不需要向我们申请——它就在你手上：</p>
         <ul>
-          <li><strong>照片与实况照片</strong>：保存在 iPhone 的系统相册，以及本 App 自身的本地沙盒目录。</li>
-          <li><strong>设置与偏好</strong>：滤镜选择、画幅、颗粒开关、暗角开关等，保存在本机 <code>UserDefaults</code> 与本地数据库中。</li>
-          <li><strong>照片元数据</strong>：拍摄时间、滤镜名称、文件路径等信息保存在本地数据库，用于相册页的展示与检索。</li>
-        </ul>
-        <p>上述内容全部位于本 App 的沙盒之内，其他 App 无法读取，卸载 App 时随沙盒一并删除（见第 07 节）。</p>
-        <div class="stripe">
-          <div>
-            <p><strong>关于设备备份。</strong>你的整机备份（iCloud 或电脑备份）由你与 Apple 控制。如果选择了加密备份，本 App 沙盒内的数据会随备份一起被加密保存——这是 iOS 的系统行为，不是我们把数据交给了谁。备份的内容始终留在你的账户之下。</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="sect" id="p5" data-title="交给系统的三件事">
-        <h2><b>05</b>交给系统的三件事</h2>
-        <p>下面三项由 iOS 系统本身提供。它们不是「我们上传的数据」，但为了完整起见，一并写明：</p>
-        <div class="tblwrap">
-          <table class="tbl">
-            <thead>
-              <tr><th>系统能力</th><th>交出什么</th><th>由谁持有</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Spotlight 搜索</td>
-                <td>照片文件名、拍摄时间、滤镜名称与一张缩略图</td>
-                <td>交给 iOS 的设备端索引，仅为了让你能从桌面下拉搜索中找到自己的照片</td>
-              </tr>
-              <tr>
-                <td>崩溃与性能诊断</td>
-                <td>崩溃堆栈、挂起记录、CPU / 内存指标</td>
-                <td>由 Apple 的 MetricKit 采集并按系统规则交付；本 App 无法在阅读之外转发</td>
-              </tr>
-              <tr>
-                <td>评价邀请</td>
-                <td>不传任何内容</td>
-                <td>由 iOS 决定是否、何时弹出评分弹窗，我们无法触发也无法感知</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>此外，主屏幕小组件与锁屏相机控件是本 App 的组成部分，与你已经授予的权限一致：它们只能在本地唤起拍摄，不产生额外的数据流。</p>
-        <p>Spotlight 索引条目保存在你设备的系统索引中；本 App 在照片被删除时会同步清除对应条目。如果你完全不想让它出现在系统搜索结果里，目前唯一的彻底做法是卸载 App。</p>
-      </section>
-
-      <section class="sect" id="p6" data-title="内置资源">
-        <h2><b>06</b>内置资源</h2>
-        <p>本 App 内置的胶片颗粒与色彩查找表（LUT）随 App 打包分发，只在本机 GPU 上参与画面换算，<strong>不涉及你的任何个人信息</strong>。</p>
-        <p>它们不读取、不记录、不外传任何内容，也不产生任何网络请求。</p>
-      </section>
-
-      <section class="sect" id="p7" data-title="保留多久，怎么删除">
-        <h2><b>07</b>保留多久，怎么删除</h2>
-        <p>因为我们不持有任何数据，「删除你的数据」这件事，不需要向我们申请——它就在你手上：</p>
-        <ul>
-          <li><strong>卸载 App</strong>：iPhone 会移除本 App 及其全部沙盒内容，包括本地数据库、偏好设置与缓存。</li>
+          <li><strong>卸载 App</strong>：系统会移除本 App 及其全部沙盒内容，包括本地数据库、偏好设置与缓存。</li>
           <li><strong>删除单张照片</strong>：在本 App 的相册页删除，会同时移除本地文件与对应的搜索索引条目。</li>
-          <li><strong>还原到出厂状态</strong>：清除本 App 的全部设置偏好即可回到初次打开的模样，不需要联系我们，也不需要提交任何申请。</li>
-          <li><strong>系统相册里的原片</strong>：它们属于你，不属于本 App；本 App 被卸载后依然存在。</li>
+          <li><strong>还原到出厂状态</strong>：清除本 App 的全部设置偏好，即可回到初次打开的模样。</li>
+          <li><strong>系统相册里的原片</strong>：它们属于你，本 App 被卸载后依然存在。</li>
         </ul>
+        <p>整机备份（iCloud 或电脑备份）由你与 Apple 控制；若选择了加密备份，本 App 沙盒内的数据会随备份一起被加密保存——这是 iOS 的系统行为，备份内容始终留在你的账户之下。</p>
       </section>
 
-      <section class="sect" id="p8" data-title="儿童隐私">
-        <h2><b>08</b>儿童隐私</h2>
+      <section class="sect" id="p4" data-title="儿童隐私">
+        <h2><b>04</b>儿童隐私</h2>
         <p>本 App 不面向 13 岁以下儿童定向提供，也不会有意收集儿童的个人信息。由于我们不收集任何人的任何信息，这一点在技术上成立，而非仅仅在条款上成立。</p>
       </section>
 
-      <section class="sect" id="p9" data-title="政策变更">
-        <h2><b>09</b>政策变更</h2>
-        <p>如果本页发生变化，我们会在页面顶部更新版本号与生效日期，并在 App 的更新说明中提及。若变更涉及实质性不利调整（例如引入联网、云同步或数据分析能力），我们会先更新本页说明、并在 App 内明确告知，<strong>在你再次确认之前不会启用相关能力</strong>。</p>
-        <p>历史版本不会留下空白：每次更新都会把版本号与「生效日期」写在本页顶部，你不必自己去比对日期。</p>
-      </section>
-
-      <section class="sect" id="p10" data-title="联系我们">
-        <h2><b>10</b>联系我们</h2>
-        <p>关于隐私的任何疑问、更正请求或投诉，都可以通过下面的方式找到我们。我们读每一封邮件。</p>
+      <section class="sect" id="p5" data-title="变更与联系">
+        <h2><b>05</b>变更与联系</h2>
+        <p>本页如有变化，我们会在顶部更新版本号与生效日期，并在 App 的更新说明中提及。若变更涉及实质性不利调整（例如引入联网、云同步或数据分析能力），我们会先在 App 内明确告知，<strong>在你再次确认之前不会启用</strong>。</p>
+        <p>关于隐私的任何疑问、更正请求或投诉，欢迎来信，通常在 1–2 个工作日内回复。</p>
         <button class="chip" type="button" data-copy="guanguan.baicun@foxmail.com">
           <span class="chip__at">@</span>
           <span class="chip__mail">guanguan.baicun@foxmail.com</span>
@@ -210,7 +136,6 @@
             <b>点击复制</b>
           </span>
         </button>
-        <p>通常在 1–2 个工作日内回复。也可以先看看<a class="lnk" href="./support.html">支持页面</a>，那里有绝大多数问题的答案。</p>
       </section>
 
     </main>
