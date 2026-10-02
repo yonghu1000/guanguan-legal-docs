@@ -60,8 +60,28 @@ cd "站点" && python3 -m http.server 8123
   1. 无网络请求、无账号、无第三方 SDK —— 若将来加入任何联网/统计能力，第 02、05、09 节必须同步改写，并且 App 侧 `PrivacyInfo.xcprivacy` 要补声明。
   2. 权限只有相机、麦克风、照片读写四项 —— 新增任何权限都要更新第 03 节。
   3. 用户协议第 12 节的 Apple 第三方受益条款是 App Store 分发的必要条款，不要删。
-- 支持页第 07 节列出了 cinegrain2（MIT）与 FFmpeg `vf_vignette`（仅参考公式）。**若新增第三方组件，请同步补表**；仓库内的完整清单见根目录 `THIRD-PARTY-NOTICES.md`。
+- 支持页第 07 节列出了 App 参考的**部分**开源组件（potatoFX、shitsukan-diffusion-kit、ComfyUI-Darkroom、FFmpeg `vf_vignette` 公式、3d-game-shaders 技法等）。**胶片颗粒内核的来源与许可不在支持页 / 隐私政策中展示**（项目所有者口径）；其 MIT 声明由随包 `THIRD-PARTY-NOTICES.txt` 与仓库 `LICENSES/cinegrain2-MIT.txt` 承担。**若新增第三方组件，请同步补表**；仓库内的完整清单见根目录 `THIRD-PARTY-NOTICES.md`。
 - 三页的「生效日期 / 版本号」需与页脚「最后更新」保持一致，改动时一并更新。
+
+### ⚠️ 两份副本必须同步（工程内）
+
+三份法律文本在工程里存在**两份副本**，只改一份就会出现「App 内文本 ≠ 提交给 Apple 的文本」——上线后属于实质性不一致：
+
+| 副本 | 用途 |
+|---|---|
+| `站点/` | 公网托管，即 App Store Connect 里填的隐私政策网址 / 支持网址 |
+| `关关/legal/` | 随 App 打包，`LegalDocumentView` 离线加载（零网络请求） |
+
+**单一事实来源 = `站点/`**。改完文案（含 `assets/site.css`、`assets/site.js`）后跑一次根目录的同步脚本：
+
+```bash
+./同步法律页.command --check   # 只比对，有差异则退出码 1
+./同步法律页.command           # 显示差异、确认后同步并逐字节复核
+```
+
+> 已实际发生过一次漂移：`site.css` 改版后包内副本停留在旧设计，App 内的法律页显示成旧样式。
+
+另外，`关关/` 目录是**同步文件夹**（主 target 的 `PBXFileSystemSynchronizedRootGroup`）——**往里面丢任何文件都会自动被打进 App 包**，没有清单也没有提示（曾因此把一份内部开发笔记发进分发包）。所以：笔记/文档一律不要放进 `关关/`；打包前跑 `./检查App包内容.command` 体检。
 
 ## 六、设计系统速查
 
