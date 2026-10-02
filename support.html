@@ -74,7 +74,7 @@
         <li class="index__rail" aria-hidden="true"></li>
         <li class="index__active" aria-hidden="true"></li>
       </ol>
-      <p class="index__foot">最后校对<br>2026 · 10 · 01</p>
+      <p class="index__foot">最后校对<br>2026 · 10 · 02</p>
     </aside>
 
     <main id="main">
@@ -106,7 +106,7 @@
         <h2><b>02</b>先试这三件事</h2>
         <p>在深挖之前，这三个动作解决了大约一半的「它怎么不动了」：</p>
         <ul>
-          <li><strong>确认系统版本。</strong>本 App 需要 iOS 17.0 或更高版本；锁屏相机控件还需要 iOS 18 以上。</li>
+          <li><strong>确认系统版本。</strong>本 App 需要 iOS 17.0 或更高版本（完整要求见第 05 节）。</li>
           <li><strong>检查权限。</strong>首次拍摄时系统会依次询问相机、麦克风与照片权限；任何一项被拒，对应功能都会安静地失效。</li>
           <li><strong>强制关闭后重开。</strong>从最近使用的 App 列表中划掉本 App，再打开一次。相机会话有时会卡在系统层面。</li>
         </ul>
@@ -136,8 +136,8 @@
           <div class="qa__item">
             <button class="qa__q" type="button">颗粒和暗角在哪里调？<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>都在取景界面底部的操作条上，不需要进设置。点按切换开关；具备档位的项目长按即可展开档位。</p>
-              <p>颗粒的数字越大，颗粒感越强。它们只作用在普通照片的成片上——取景预览与实况照片不含颗粒，这也是为了避免预览与实际观感不一致带来的判断误差。</p>
+              <p>都在取景界面底部的操作条上，不需要进设置。颗粒与暗角都是开关：点一下打开，再点一下关闭。</p>
+              <p>两者只作用在普通照片的成片上——取景预览与实况照片不含颗粒，这也是为了避免预览与实际观感不一致带来的判断误差。</p>
             </div></div>
           </div>
 
@@ -174,7 +174,7 @@
           <div class="qa__item">
             <button class="qa__q" type="button">照片会以什么格式保存？清晰度如何？<span class="qa__sign" aria-hidden="true"></span></button>
             <div class="qa__a"><div>
-              <p>常规照片以 <strong>JPEG（.jpg）</strong> 保存，质量为 90%，不二次压缩，成片即设备原生分辨率。应用目前<strong>不提供 HEIC / PNG 等格式选项</strong>——格式选择在 2026 年 9 月已从设置中移除，统一为 JPEG。</p>
+              <p>常规照片以 <strong>JPEG（.jpg）</strong> 保存，质量为 90%，不二次压缩，成片即设备原生分辨率。本 App 不提供 HEIC / PNG 等格式选项。</p>
               <p>若你在设置中开启可选的「RAW 显影」（Process Zero），照片会改为保存为 <strong>DNG</strong> 原始文件：Pro 机型为 Apple ProRAW，其余机型为 Bayer RAW，绕过系统的多帧融合与降噪。清晰度为设备原生水准；但胶片风格本身包含曲线与颗粒，观感上的「锐度」不同于原生相机。</p>
             </div></div>
           </div>
@@ -232,48 +232,8 @@
         <p>这意味着：我们无法帮你找回丢失的照片，但也意味着我们看不到它们。备份请依靠你自己的整机方案。完整的说明见<a class="lnk" href="./privacy.html">隐私政策</a>。</p>
       </section>
 
-      <section class="sect" id="s7" data-title="开源与其他第三方组件">
-        <h2><b>07</b>开源与其他第三方组件</h2>
-        <p>本 App 的效果参考了以下开源工作，按原始许可如实记录：</p>
-        <div class="tblwrap">
-          <table class="tbl">
-            <thead>
-              <tr><th>组件</th><th>许可</th><th>来源</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>高光扩散内核（potatoFX）</td>
-                <td>MIT</td>
-                <td><a class="lnk ext" href="https://github.com/GimleLarpes/potatoFX">GimleLarpes / potatoFX<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4.4 3H9v4.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td>
-              </tr>
-              <tr>
-                <td>黑柔滤镜（shitsukan-diffusion-kit）</td>
-                <td>MIT</td>
-                <td><a class="lnk ext" href="https://github.com/50asa/shitsukan-diffusion-kit">50asa / shitsukan-diffusion-kit<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4.4 3H9v4.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td>
-              </tr>
-              <tr>
-                <td>漏光 / 划痕特效（ComfyUI-Darkroom）</td>
-                <td>许可核实中</td>
-                <td><a class="lnk ext" href="https://github.com/jeremieLouvaert/ComfyUI-Darkroom">jeremieLouvaert / ComfyUI-Darkroom<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4.4 3H9v4.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td>
-              </tr>
-              <tr>
-                <td>暗角光学公式（FFmpeg <code>vf_vignette</code>）</td>
-                <td>LGPL（仅移植公式，未随包包含）</td>
-                <td><a class="lnk ext" href="https://www.ffmpeg.org/">FFmpeg<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4.4 3H9v4.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td>
-              </tr>
-              <tr>
-                <td>镜头色散技法（3d-game-shaders-for-beginners）</td>
-                <td>无许可义务（技法参考）</td>
-                <td><a class="lnk ext" href="https://github.com/lettier/3d-game-shaders-for-beginners">David Lettier / 3d-game-shaders-for-beginners<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4.4 3H9v4.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>上述项目中，potatoFX 与 shitsukan-diffusion-kit 以 MIT 许可随 App 分发；FFmpeg 与 3d-game-shaders-for-beginners 仅移植了其公开数学公式 / 通用技法，未随包包含其任何源码或二进制，不触发再分发义务；ComfyUI-Darkroom 的许可状态仍在核实中。若你是某项资源的权利人，或对其中某一项有疑问，请来信联系我们。</p>
-      </section>
-
-      <section class="sect" id="s8" data-title="功能建议">
-        <h2><b>08</b>功能建议</h2>
+      <section class="sect" id="s7" data-title="功能建议">
+        <h2><b>07</b>功能建议</h2>
         <p>关关很小，功能加得很慢，但我们认真读每一条建议。来信时请写清楚「你想解决的场景」，而不仅仅是「想要某个按钮」——前者往往能让我们做出更好的东西。</p>
         <p>你也可以在 App Store 的评价里留下你的想法。评价对新用户很有帮助，谢谢你。</p>
       </section>
@@ -283,7 +243,7 @@
 
   <footer class="foot">
     <span>© 2026 关关 GUANGUAN</span>
-    <span class="yes">最后更新 2026 · 10 · 01</span>
+    <span class="yes">最后更新 2026 · 10 · 02</span>
     <nav>
       <a href="./terms.html">用户协议</a>
       <a href="./privacy.html">隐私政策</a>
