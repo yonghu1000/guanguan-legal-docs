@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# 本站是关关 Guanguan 的公开法务与支持页面，全部内容可被索引。
+# 站点上线并确定域名后，请在此追加一行（去掉行首的 # 并替换域名）：
+# Sitemap: https://你的域名/sitemap.xml
